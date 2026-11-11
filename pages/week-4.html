@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Week 4 training diary covering Docker, the DevOps lifecycle, application deployment and CI/CD." name="description"/>
+<title>Week 4 | Advanced Topics and Applications</title>
+<link href="../assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="sidebar" id="week-sidebar">
+<div class="brand">
+<div class="brand-mark">CD</div>
+<div>
+<h2>Training Diary</h2>
+<span>Cloud Computing &amp; DevOps</span>
+</div>
+</div>
+<div class="profile">
+<span class="entry-label">TRAINING PROGRAMME</span>
+<h3>GNDEC, Ludhiana</h3>
+<p>Four-Week Training · 2026</p>
+</div>
+<nav class="side-nav">
+<span class="entry-label">MAIN MENU</span>
+<a href="../index.html">Overview</a>
+<a href="week-1.html">Week 01 · Linux &amp; Networking</a>
+<a href="week-2.html">Week 02 · AWS Basics</a>
+<a href="week-3.html">Week 03 · Git &amp; CI/CD</a>
+<a class="active" href="week-4.html">Week 04 · Advanced Topics</a>
+</nav>
+<div class="sidebar-bottom">
+<p>Guru Nanak Dev Engineering College</p>
+<small>Ludhiana, Punjab</small>
+</div>
+</div>
+<div class="scrim"></div>
+<main class="main-content" id="top">
+<div class="topline">
+<span>FOUR-WEEK TRAINING PROGRAMME / WEEK 04</span>
+<button aria-controls="week-sidebar" aria-expanded="false" aria-label="Open navigation" class="mobile-menu">☰</button>
+</div>
+<section class="week-hero" id="week-overview">
+<div class="week-progress">
+            WEEK 04 <span>04 / 04</span>
+</div>
+<p class="eyebrow">ADVANCED LEARNING MODULE</p>
+<h1>Advanced Topics and<br/>Interdisciplinary Applications</h1>
+<p>
+            Bringing together Docker, GitHub, AWS and CI/CD concepts
+            to understand how modern applications are packaged,
+            automated and deployed.
+        </p>
+<div class="brief-grid">
+<div>
+<span>WEEK</span>
+<strong>04</strong>
+</div>
+<div>
+<span>FOCUS</span>
+<strong>Docker &amp; Deployment</strong>
+</div>
+<div>
+<span>LEARNING MODE</span>
+<strong>Integration + Practical</strong>
+</div>
+</div>
+</section>
+<section class="week-page-content">
+<div class="week-page-grid">
+<article class="week-page-main">
+<p class="eyebrow">DAILY TRAINING RECORD</p>
+<h2>Learning Journal</h2>
+<p class="section-intro">
+                    The fourth week focused on advanced DevOps concepts
+                    and the integration of tools studied during the
+                    previous weeks. The sessions covered Docker,
+                    containerisation, the DevOps lifecycle and the
+                    deployment of applications using GitHub, Docker
+                    and AWS.
+                </p>
+<!-- DAY 01 -->
+<section class="day-entry" id="day-one">
+<div class="day-rail">
+<span>01</span>
+<small>DAY ONE</small>
+</div>
+<div class="day-content">
+<p class="eyebrow">CONTAINERISATION</p>
+<h2>Introduction to Docker, Images and Containers</h2>
+<p>
+                            The first session introduced Docker as a
+                            platform for packaging and running
+                            applications in containers. Containerisation
+                            helps provide a consistent environment
+                            containing the application and its
+                            required dependencies.
+                        </p>
+<p>
+                            Docker images were studied as read-only
+                            templates used to create containers.
+                            Containers are instances of images that
+                            provide isolated environments for
+                            executing applications.
+                        </p>
+<div class="entry-grid">
+<div>
+<span class="entry-label">CONCEPTS COVERED</span>
+<ul>
+<li>Introduction to Docker</li>
+<li>Containerisation</li>
+<li>Docker images</li>
+<li>Docker containers</li>
+<li>Image and container relationship</li>
+</ul>
+</div>
+<div>
+<span class="entry-label">KEY LEARNING</span>
+<p>
+                                    Understood how Docker packages
+                                    applications and how containers
+                                    provide isolated execution environments.
+                                </p>
+</div>
+</div>
+<h3>Basic Docker Commands</h3>
+<pre><code>docker --version
+docker pull nginx
+docker images
+docker run nginx
+docker ps
+docker ps -a</code></pre>
+<div class="reflection">
+<strong>Daily Reflection</strong>
+<p>
+                                This session introduced containerisation
+                                as a practical solution for running
+                                applications consistently across
+                                different environments.
+                            </p>
+</div>
+</div>
+</section>
+<!-- DAY 02 -->
+<section class="day-entry" id="day-two">
+<div class="day-rail">
+<span>02</span>
+<small>DAY TWO</small>
+</div>
+<div class="day-content">
+<p class="eyebrow">DOCKER PRACTICAL</p>
+<h2>Dockerfiles and Container Deployment</h2>
+<p>
+                            The second session focused on Dockerfiles
+                            and the process of building custom Docker
+                            images. A Dockerfile contains instructions
+                            that define the environment and steps
+                            required to package an application.
+                        </p>
+<h3>Common Dockerfile Instructions</h3>
+<div class="entry-grid">
+<div>
+<span class="entry-label">INSTRUCTIONS</span>
+<ul>
+<li>FROM — selects a base image</li>
+<li>WORKDIR — sets the working directory</li>
+<li>COPY — copies project files</li>
+<li>RUN — executes build-time commands</li>
+<li>EXPOSE — documents an application port</li>
+<li>CMD — defines the default start command</li>
+</ul>
+</div>
+<div>
+<span class="entry-label">PRACTICAL CONCEPTS</span>
+<ul>
+<li>Creating a Dockerfile</li>
+<li>Building an image</li>
+<li>Running a container</li>
+<li>Mapping application ports</li>
+<li>Checking container status</li>
+</ul>
+</div>
+</div>
+<h3>Example Dockerfile</h3>
+<pre><code>FROM python:3.12-slim
+
+WORKDIR /app
+
+COPY . .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+EXPOSE 5000
+
+CMD ["python", "app.py"]</code></pre>
+<h3>Building and Running the Image</h3>
+<pre><code>docker build -t my-web-app .
+
+docker images
+
+docker run -d -p 5000:5000 --name web-app my-web-app
+
+docker ps</code></pre>
+<p>
+                            Port mapping connects a port on the host
+                            machine to a port inside the container,
+                            allowing users to access the application
+                            through the host.
+                        </p>
+<div class="reflection">
+<strong>Daily Reflection</strong>
+<p>
+                                Learned how Dockerfiles simplify
+                                application packaging and how images
+                                can be used to deploy containers.
+                            </p>
+</div>
+</div>
+</section>
+<!-- DAY 03 -->
+<section class="day-entry" id="day-three">
+<div class="day-rail">
+<span>03</span>
+<small>DAY THREE</small>
+</div>
+<div class="day-content">
+<p class="eyebrow">DEVOPS LIFECYCLE</p>
+<h2>Understanding the DevOps Lifecycle</h2>
+<p>
+                            This session focused on the DevOps lifecycle
+                            and how different stages work together
+                            to support continuous software development
+                            and delivery.
+                        </p>
+<p>
+                            DevOps combines development and operations
+                            practices to improve communication,
+                            automation and the speed of software
+                            delivery. It encourages continuous
+                            feedback and improvement throughout
+                            the application lifecycle.
+                        </p>
+<h3>Main Stages of the DevOps Lifecycle</h3>
+<div class="entry-grid">
+<div>
+<span class="entry-label">LIFECYCLE STAGES</span>
+<ul>
+<li>Plan — define requirements</li>
+<li>Code — develop application features</li>
+<li>Build — prepare application packages</li>
+<li>Test — validate functionality</li>
+<li>Release — prepare software for delivery</li>
+<li>Deploy — make the application available</li>
+<li>Operate — maintain running services</li>
+<li>Monitor — observe performance and issues</li>
+</ul>
+</div>
+<div>
+<span class="entry-label">RELATED TOOLS</span>
+<ul>
+<li>Git and GitHub</li>
+<li>Jenkins</li>
+<li>Docker</li>
+<li>AWS</li>
+<li>Monitoring tools</li>
+</ul>
+</div>
+</div>
+<p>
+                            The session also explained how these tools
+                            connect with one another. GitHub stores
+                            source code, Jenkins automates workflow
+                            stages, Docker packages applications and
+                            AWS provides cloud infrastructure for
+                            deployment.
+                        </p>
+<div class="reflection">
+<strong>Daily Reflection</strong>
+<p>
+                                Understanding the DevOps lifecycle
+                                helped connect the individual tools
+                                from earlier sessions into one
+                                continuous software delivery process.
+                            </p>
+</div>
+</div>
+</section>
+<!-- DAY 04 -->
+<section class="day-entry" id="day-four">
+<div class="day-rail">
+<span>04</span>
+<small>DAY FOUR</small>
+</div>
+<div class="day-content">
+<p class="eyebrow">INTERDISCIPLINARY APPLICATION</p>
+<h2>Deploying a Web Application Using GitHub, Docker and AWS</h2>
+<p>
+                            The fourth session brought together
+                            the technologies covered during the
+                            training programme. The objective was
+                            to understand how a web application
+                            can move from source code to a
+                            containerised application running
+                            on cloud infrastructure.
+                        </p>
+<h3>Deployment Workflow</h3>
+<div class="entry-grid">
+<div>
+<span class="entry-label">SOURCE CODE</span>
+<p>
+                                    The application source code is
+                                    maintained in a GitHub repository.
+                                    Changes are tracked using Git.
+                                </p>
+</div>
+<div>
+<span class="entry-label">CONTAINERISATION</span>
+<p>
+                                    A Dockerfile defines the application
+                                    environment and is used to build
+                                    a Docker image.
+                                </p>
+</div>
+<div>
+<span class="entry-label">CLOUD INFRASTRUCTURE</span>
+<p>
+                                    AWS EC2 provides the virtual server
+                                    on which the container can run.
+                                </p>
+</div>
+<div>
+<span class="entry-label">APPLICATION ACCESS</span>
+<p>
+                                    Network and security settings
+                                    allow users to access the
+                                    deployed application.
+                                </p>
+</div>
+</div>
+<h3>Illustrative Deployment Commands</h3>
+<p>
+                            After preparing the application and
+                            Dockerfile, the image can be built:
+                        </p>
+<pre><code>docker build -t my-web-app .</code></pre>
+<p>
+                            The image can be tagged for a container
+                            registry and uploaded:
+                        </p>
+<pre><code>docker tag my-web-app username/my-web-app:latest
+
+docker login
+
+docker push username/my-web-app:latest</code></pre>
+<p>
+                            On the AWS EC2 server, Docker can be used
+                            to retrieve and run the image:
+                        </p>
+<pre><code>docker pull username/my-web-app:latest
+
+docker run -d -p 80:5000 username/my-web-app:latest</code></pre>
+<p>
+                            The example assumes that the application
+                            listens on port 5000 inside the container
+                            and that the EC2 security group permits
+                            the required HTTP traffic. The actual
+                            commands depend on the application and
+                            server configuration.
+                        </p>
+<div class="reflection">
+<strong>Daily Reflection</strong>
+<p>
+                                This session demonstrated how version
+                                control, containerisation and cloud
+                                infrastructure can work together
+                                to deploy a web application.
+                            </p>
+</div>
+</div>
+</section>
+<!-- OUTCOMES -->
+<section class="outcomes-section" id="learning-outcomes">
+<p class="eyebrow">SKILLS DEVELOPED</p>
+<h2>Week 4 Learning Outcomes</h2>
+<ul>
+<li>Explain Docker and the concept of containerisation.</li>
+<li>Differentiate between Docker images and containers.</li>
+<li>Understand Dockerfile instructions.</li>
+<li>Build and run a basic Docker container.</li>
+<li>Explain the major stages of the DevOps lifecycle.</li>
+<li>Understand how GitHub, Docker and AWS work together.</li>
+<li>Describe the basic process of deploying a web application on AWS using Docker.</li>
+<li>Understand the purpose of a basic CI/CD pipeline.</li>
+</ul>
+</section>
+<div class="week-navigation">
+<a href="week-3.html">← Previous Week</a>
+<a href="../index.html">Back to Overview →</a>
+</div>
+</article>
+<aside class="week-sidebar">
+<div class="week-learning">
+<p class="eyebrow">WEEK 04</p>
+<h3>On This Page</h3>
+<a href="#top">Week Overview</a>
+<a href="#day-one">Docker Basics</a>
+<a href="#day-two">Dockerfiles</a>
+<a href="#day-three">DevOps Lifecycle</a>
+<a href="#day-four">Application Deployment</a>
+<a href="#weekly-reflection">Weekly Reflection</a>
+<a href="#learning-outcomes">Learning Outcomes</a>
+</div>
+</aside>
+</div>
+</section>
+<footer class="site-footer">
+<p>Cloud Computing and DevOps Training · GNDEC, Ludhiana · 2026</p>
+</footer>
+</main>
+<script defer="True" src="../assets/js/script.js"></script>
+</body>
+</html>

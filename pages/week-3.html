@@ -1,0 +1,468 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Week 3 training diary covering Git, GitHub, CI/CD concepts and Jenkins basics." name="description"/>
+<title>Week 3 | DevOps Tools — Git and CI/CD</title>
+<link href="../assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="sidebar" id="week-sidebar">
+<div class="brand">
+<div class="brand-mark">CD</div>
+<div>
+<h2>Training Diary</h2>
+<span>Cloud Computing &amp; DevOps</span>
+</div>
+</div>
+<div class="profile">
+<span class="entry-label">TRAINING PROGRAMME</span>
+<h3>GNDEC, Ludhiana</h3>
+<p>Four-Week Training · 2026</p>
+</div>
+<nav class="side-nav">
+<span class="entry-label">MAIN MENU</span>
+<a href="../index.html">Overview</a>
+<a href="week-1.html">Week 01 · Linux &amp; Networking</a>
+<a href="week-2.html">Week 02 · AWS Basics</a>
+<a class="active" href="week-3.html">Week 03 · Git &amp; CI/CD</a>
+<a href="week-4.html">Week 04 · Advanced Topics</a>
+</nav>
+<div class="sidebar-bottom">
+<p>Guru Nanak Dev Engineering College</p>
+<small>Ludhiana, Punjab</small>
+</div>
+</div>
+<div class="scrim"></div>
+<main class="main-content" id="top">
+<div class="topline">
+<span>FOUR-WEEK TRAINING PROGRAMME / WEEK 03</span>
+<button aria-controls="week-sidebar" aria-expanded="false" aria-label="Open navigation" class="mobile-menu">☰</button>
+</div>
+<section class="week-hero" id="week-overview">
+<div class="week-progress">
+            WEEK 03 <span>03 / 04</span>
+</div>
+<p class="eyebrow">DEVOPS TOOLS MODULE</p>
+<h1>Git, GitHub<br/>and CI/CD Basics</h1>
+<p>
+            Understanding version control, collaborative software
+            development and the fundamentals of automated build
+            and integration workflows.
+        </p>
+<div class="brief-grid">
+<div>
+<span>WEEK</span>
+<strong>03</strong>
+</div>
+<div>
+<span>FOCUS</span>
+<strong>Git &amp; CI/CD</strong>
+</div>
+<div>
+<span>LEARNING MODE</span>
+<strong>Tools + Practical</strong>
+</div>
+</div>
+</section>
+<section class="week-page-content">
+<div class="week-page-grid">
+<article class="week-page-main">
+<p class="eyebrow">DAILY TRAINING RECORD</p>
+<h2>Learning Journal</h2>
+<p class="section-intro">
+                    The third week focused on DevOps tools used to
+                    manage source code and automate software workflows.
+                    Git and GitHub were introduced for version control
+                    and collaboration, followed by CI/CD concepts
+                    and an introduction to Jenkins pipelines.
+                </p>
+<!-- DAY 01 -->
+<section class="day-entry" id="day-one">
+<div class="day-rail">
+<span>01</span>
+<small>DAY ONE</small>
+</div>
+<div class="day-content">
+<p class="eyebrow">VERSION CONTROL</p>
+<h2>Introduction to Git and Version Control</h2>
+<p>
+                            The first session introduced version control
+                            and its importance in software development.
+                            Version control systems maintain a history
+                            of changes made to project files, making it
+                            easier to track modifications and work with
+                            different versions of a project.
+                        </p>
+<p>
+                            Git was introduced as a distributed version
+                            control system. It allows developers to
+                            maintain repositories locally, create
+                            commits and collaborate with other
+                            developers.
+                        </p>
+<div class="entry-grid">
+<div>
+<span class="entry-label">CONCEPTS COVERED</span>
+<ul>
+<li>Version control systems</li>
+<li>Introduction to Git</li>
+<li>Repositories</li>
+<li>Commits and project history</li>
+<li>Distributed version control</li>
+</ul>
+</div>
+<div>
+<span class="entry-label">KEY LEARNING</span>
+<p>
+                                    Understood how Git tracks changes
+                                    and helps developers maintain
+                                    organised project histories.
+                                </p>
+</div>
+</div>
+<div class="reflection">
+<strong>Daily Reflection</strong>
+<p>
+                                This session introduced an essential
+                                DevOps tool and explained why tracking
+                                source-code changes is important
+                                during software development.
+                            </p>
+</div>
+</div>
+</section>
+<!-- DAY 02 -->
+<section class="day-entry" id="day-two">
+<div class="day-rail">
+<span>02</span>
+<small>DAY TWO</small>
+</div>
+<div class="day-content">
+<p class="eyebrow">GIT PRACTICAL</p>
+<h2>Git Repository and Basic Commands</h2>
+<p>
+                            This session covered creating and managing
+                            Git repositories. A repository stores the
+                            project files and their version history.
+                            Git commands were used to initialise a
+                            repository, inspect changes and save
+                            project versions.
+                        </p>
+<h3>Initialising a Repository</h3>
+<pre><code>git --version
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+
+mkdir my-project
+cd my-project
+
+git init
+git status</code></pre>
+<h3>Tracking Project Files</h3>
+<pre><code>git add filename
+git add .
+git commit -m "Initial project commit"</code></pre>
+<p>
+                            The staging area allows selected changes
+                            to be prepared before creating a commit.
+                            A commit records a snapshot of the staged
+                            changes in the repository history.
+                        </p>
+<div class="entry-grid">
+<div>
+<span class="entry-label">COMMANDS PRACTISED</span>
+<ul>
+<li>git init</li>
+<li>git status</li>
+<li>git add</li>
+<li>git commit</li>
+<li>git log</li>
+</ul>
+</div>
+<div>
+<span class="entry-label">KEY LEARNING</span>
+<p>
+                                    Learned how to initialise a Git
+                                    repository, stage files and save
+                                    changes through commits.
+                                </p>
+</div>
+</div>
+<div class="reflection">
+<strong>Daily Reflection</strong>
+<p>
+                                Practising Git commands helped clarify
+                                the workflow of tracking, staging and
+                                recording project changes.
+                            </p>
+</div>
+</div>
+</section>
+<!-- DAY 03 -->
+<section class="day-entry" id="day-three">
+<div class="day-rail">
+<span>03</span>
+<small>DAY THREE</small>
+</div>
+<div class="day-content">
+<p class="eyebrow">GITHUB WORKFLOW</p>
+<h2>GitHub Repositories and Collaboration</h2>
+<p>
+                            The third session introduced GitHub as a
+                            web-based platform for hosting Git
+                            repositories and supporting collaborative
+                            software development.
+                        </p>
+<p>
+                            The workflow of creating a GitHub
+                            repository and connecting it with a local
+                            repository was explored. Common operations
+                            such as cloning, pushing and pulling
+                            changes were covered.
+                        </p>
+<h3>Common GitHub Workflow Commands</h3>
+<pre><code># Clone an existing repository
+git clone https://github.com/username/repository.git
+
+# Check repository status
+git status
+
+# Stage and commit changes
+git add .
+git commit -m "Update project files"
+
+# Connect a local repository to GitHub
+git remote add origin https://github.com/username/repository.git
+
+# Push changes to GitHub
+git push -u origin main
+
+# Retrieve remote changes
+git pull origin main</code></pre>
+<p>
+                            The session also introduced pull requests.
+                            A pull request allows proposed changes to
+                            be reviewed before they are merged into
+                            another branch.
+                        </p>
+<div class="entry-grid">
+<div>
+<span class="entry-label">TOPICS COVERED</span>
+<ul>
+<li>GitHub repository creation</li>
+<li>Cloning repositories</li>
+<li>Push and pull operations</li>
+<li>Remote repositories</li>
+<li>Pull requests</li>
+</ul>
+</div>
+<div>
+<span class="entry-label">KEY LEARNING</span>
+<p>
+                                    Understood how local Git repositories
+                                    connect to GitHub and how developers
+                                    share and review code changes.
+                                </p>
+</div>
+</div>
+<div class="reflection">
+<strong>Daily Reflection</strong>
+<p>
+                                This session connected local version
+                                control with online collaboration and
+                                demonstrated how GitHub supports
+                                team-based development.
+                            </p>
+</div>
+</div>
+</section>
+<!-- DAY 04 -->
+<section class="day-entry" id="day-four">
+<div class="day-rail">
+<span>04</span>
+<small>DAY FOUR</small>
+</div>
+<div class="day-content">
+<p class="eyebrow">AUTOMATION CONCEPTS</p>
+<h2>Introduction to CI/CD and Jenkins</h2>
+<p>
+                            This session introduced Continuous
+                            Integration and Continuous Delivery
+                            or Deployment (CI/CD). These practices
+                            help automate parts of the software
+                            development process.
+                        </p>
+<p>
+                            Continuous Integration involves frequently
+                            integrating code changes into a shared
+                            repository and validating them through
+                            automated builds and tests.
+                        </p>
+<p>
+                            Continuous Delivery focuses on preparing
+                            validated software for release, while
+                            Continuous Deployment can automatically
+                            release successful changes to production.
+                        </p>
+<h3>Introduction to Jenkins</h3>
+<p>
+                            Jenkins was introduced as an automation
+                            server used to create and execute CI/CD
+                            pipelines. It can connect with source-code
+                            repositories and run automated tasks
+                            whenever changes are detected.
+                        </p>
+<div class="entry-grid">
+<div>
+<span class="entry-label">CI/CD CONCEPTS</span>
+<ul>
+<li>Continuous Integration</li>
+<li>Continuous Delivery</li>
+<li>Continuous Deployment</li>
+<li>Automated builds</li>
+<li>Automated testing</li>
+</ul>
+</div>
+<div>
+<span class="entry-label">JENKINS CONCEPTS</span>
+<ul>
+<li>Jenkins server</li>
+<li>Jobs and pipelines</li>
+<li>Build automation</li>
+<li>Pipeline stages</li>
+</ul>
+</div>
+</div>
+<div class="reflection">
+<strong>Daily Reflection</strong>
+<p>
+                                Learned how CI/CD reduces repetitive
+                                manual steps and how Jenkins can
+                                coordinate automated software workflows.
+                            </p>
+</div>
+</div>
+</section>
+<!-- DAY 05 -->
+<section class="day-entry" id="day-five">
+<div class="day-rail">
+<span>05</span>
+<small>DAY FIVE</small>
+</div>
+<div class="day-content">
+<p class="eyebrow">JENKINS PRACTICAL</p>
+<h2>Setting Up a Jenkins Pipeline and Automating Builds</h2>
+<p>
+                            The final session focused on the basic
+                            setup of a Jenkins pipeline and its role
+                            in automating the build process.
+                        </p>
+<p>
+                            A pipeline represents a sequence of
+                            automated stages that perform tasks
+                            such as checking out source code,
+                            building an application and running tests.
+                        </p>
+<h3>Example Jenkins Pipeline</h3>
+<p>
+                            A Jenkins pipeline can be defined in a
+                            file named <code>Jenkinsfile</code>.
+                            The following example demonstrates a
+                            simple pipeline structure:
+                        </p>
+<pre><code>pipeline {
+    agent any
+
+    stages {
+
+        stage('Build') {
+            steps {
+                echo 'Building the application'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Running application tests'
+            }
+        }
+
+        stage('Complete') {
+            steps {
+                echo 'Pipeline completed'
+            }
+        }
+    }
+}</code></pre>
+<h3>Basic Pipeline Workflow</h3>
+<ol>
+<li>Create or select a source-code repository.</li>
+<li>Configure a Jenkins job or pipeline.</li>
+<li>Connect the project repository.</li>
+<li>Define the required pipeline stages.</li>
+<li>Execute the pipeline.</li>
+<li>Review the build output and status.</li>
+</ol>
+<p>
+                            The build process can be triggered manually
+                            or configured to run automatically when
+                            new code changes are pushed to the repository.
+                        </p>
+<div class="reflection">
+<strong>Daily Reflection</strong>
+<p>
+                                The practical session demonstrated how
+                                Jenkins pipelines organise automated
+                                tasks and provide visibility into
+                                the build process.
+                            </p>
+</div>
+</div>
+</section>
+<!-- OUTCOMES -->
+<section class="outcomes-section" id="learning-outcomes">
+<p class="eyebrow">SKILLS DEVELOPED</p>
+<h2>Week 3 Learning Outcomes</h2>
+<ul>
+<li>Explain the purpose of version control.</li>
+<li>Use basic Git commands to manage repositories.</li>
+<li>Create and manage a GitHub repository.</li>
+<li>Understand clone, commit, push and pull operations.</li>
+<li>Explain pull requests and collaborative workflows.</li>
+<li>Understand Continuous Integration and Continuous Delivery.</li>
+<li>Describe Jenkins and the purpose of a pipeline.</li>
+<li>Understand basic Jenkins pipeline setup and build automation.</li>
+</ul>
+</section>
+<div class="week-navigation">
+<a href="week-2.html">← Previous Week</a>
+<a href="week-4.html">Next Week →</a>
+</div>
+</article>
+<aside class="week-sidebar">
+<div class="week-learning">
+<p class="eyebrow">WEEK 03</p>
+<h3>On This Page</h3>
+<a href="#top">Week Overview</a>
+<a href="#day-one">Version Control</a>
+<a href="#day-two">Git Commands</a>
+<a href="#day-three">GitHub Workflow</a>
+<a href="#day-four">CI/CD and Jenkins</a>
+<a href="#day-five">Jenkins Pipeline</a>
+<a href="#weekly-reflection">Weekly Reflection</a>
+<a href="#learning-outcomes">Learning Outcomes</a>
+</div>
+</aside>
+</div>
+</section>
+<footer class="site-footer">
+<p>Cloud Computing and DevOps Training · GNDEC, Ludhiana · 2026</p>
+</footer>
+</main>
+<script defer="True" src="../assets/js/script.js"></script>
+</body>
+</html>
